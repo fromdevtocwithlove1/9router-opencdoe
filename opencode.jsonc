@@ -1,16 +1,35 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "attachment": {
+    "image": {
+      "auto_resize": true,
+      "max_width": 2000,
+      "max_height": 2000,
+      "max_base64_bytes": 5242880
+    }
+  },
   "provider": {
     "9router": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "9Router",
       "options": {
         "baseURL": "http://127.0.0.1:20128/v1",
-        "apiKey": "11"
+        "apiKey": "sk-4269c7445ea74dd0-9p9h3u-dd26e54d"
       },
       "models": {
         "code": {
           "name": "Code Combo",
+          "attachment": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
           "variants": {
             "low": {
               "reasoningEffort": "low"
@@ -28,6 +47,18 @@
         },
         "cx/gpt-5.5": {
           "name": "GPT 5.5",
+          "attachment": true,
+          "reasoning": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
           "variants": {
             "low": {
               "reasoningEffort": "low"
@@ -44,31 +75,122 @@
           }
         },
         "ag/gemini-3-flash-agent": {
-          "name": "Gemini 3 Flash Agent"
+          "name": "Gemini 3 Flash Agent",
+          "attachment": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
         },
         "ag/gemini-3.5-flash-low": {
-          "name": "Gemini 3.5 Flash Low"
+          "name": "Gemini 3.5 Flash Low",
+          "attachment": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
         },
         "ag/gemini-3.5-flash-extra-low": {
-          "name": "Gemini 3.5 Flash Extra Low"
+          "name": "Gemini 3.5 Flash Extra Low",
+          "attachment": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
         },
         "ag/gemini-pro-agent": {
-          "name": "Gemini 3.1 Pro Agent"
+          "name": "Gemini 3.1 Pro Agent",
+          "attachment": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
         },
         "ag/gemini-3.1-pro-low": {
-          "name": "Gemini 3.1 Pro Low"
+          "name": "Gemini 3.1 Pro Low",
+          "attachment": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
         },
         "ag/claude-sonnet-4-6": {
-          "name": "Claude Sonnet 4.6"
+          "name": "Claude Sonnet 4.6",
+          "attachment": true,
+          "reasoning": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
         },
         "ag/claude-opus-4-6-thinking": {
-          "name": "Claude Opus 4.6 Thinking"
+          "id": "ag/claude-opus-4-6-thinking",
+          "name": "Claude Opus 4.6 Thinking",
+          "attachment": true,
+          "reasoning": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
         },
         "ag/gpt-oss-120b-medium": {
           "name": "GPT-OSS 120B Medium"
         },
         "ag/gemini-3-flash": {
-          "name": "Gemini 3 Flash"
+          "name": "Gemini 3 Flash",
+          "attachment": true,
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
         },
         "ds/deepseek-v4-pro": {
           "name": "DeepSeek V4 Pro"
