@@ -1,0 +1,95 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "9router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "9Router",
+      "options": {
+        "baseURL": "http://127.0.0.1:20128/v1",
+        "apiKey": "11"
+      },
+      "models": {
+        "code": {
+          "name": "Code Combo",
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "cx/gpt-5.5": {
+          "name": "GPT 5.5",
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "max": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "ag/gemini-3-flash-agent": {
+          "name": "Gemini 3 Flash Agent"
+        },
+        "ag/gemini-3.5-flash-low": {
+          "name": "Gemini 3.5 Flash Low"
+        },
+        "ag/gemini-3.5-flash-extra-low": {
+          "name": "Gemini 3.5 Flash Extra Low"
+        },
+        "ag/gemini-pro-agent": {
+          "name": "Gemini 3.1 Pro Agent"
+        },
+        "ag/gemini-3.1-pro-low": {
+          "name": "Gemini 3.1 Pro Low"
+        },
+        "ag/claude-sonnet-4-6": {
+          "name": "Claude Sonnet 4.6"
+        },
+        "ag/claude-opus-4-6-thinking": {
+          "name": "Claude Opus 4.6 Thinking"
+        },
+        "ag/gpt-oss-120b-medium": {
+          "name": "GPT-OSS 120B Medium"
+        },
+        "ag/gemini-3-flash": {
+          "name": "Gemini 3 Flash"
+        },
+        "ds/deepseek-v4-pro": {
+          "name": "DeepSeek V4 Pro"
+        },
+        "ds/deepseek-v4-pro-max": {
+          "name": "DeepSeek V4 Pro Max"
+        },
+        "ds/deepseek-v4-pro-none": {
+          "name": "DeepSeek V4 Pro No Thinking"
+        },
+        "ds/deepseek-v4-flash": {
+          "name": "DeepSeek V4 Flash"
+        },
+        "ds/deepseek-chat": {
+          "name": "DeepSeek V3.2 Chat"
+        },
+        "ds/deepseek-reasoner": {
+          "name": "DeepSeek V3.2 Reasoner"
+        }
+      }
+    }
+  },
+  "model": "9router/code"
+}
